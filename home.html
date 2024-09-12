@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" onclick="showContent('home')"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" onclick="showContent('about')"><i class="fas fa-user"></i> About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" onclick="showContent('projects')"><i class="fas fa-briefcase"></i> Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" onclick="showContent('skills')"><i class="fas fa-cogs"></i> Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" onclick="showContent('contact')"><i class="fas fa-envelope"></i> Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-10 ml-sm-auto px-4" style="background-image: url('greenGlass.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                <!-- Home Content -->
+                <div id="home" class="content-section">
+                    <div class="home-content d-flex align-items-center justify-content-between mt-5 glass-effect">
+                        <div class="home-text">
+                            <h1>Rupa Uppin</h1>
+                            <p>Hello! I'm Rupa Uppin, a passionate software developer based in Cincinnati, Ohio, with experience in both frontend and backend development. I have worked on diverse projects across different domains, from e-commerce applications to security enhancements for banking industry products. With proficiency in Java, JavaScript, MySQL, and various frameworks like Angular and React, I bring a versatile skill set to the table.</p>
+                        </div>
+                        <!-- Profile Picture -->
+                        <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+                    </div>
+                </div>
+
+                <!-- About Me Content -->
+                <div id="about" class="content-section" style="display: none;">
+                    <div class="about-content d-flex align-items-center justify-content-between mt-5 glass-effect">
+                        <div class="about-text">
+                            <h2>About Me</h2>
+                            <p>I am Rupa Uppin, a dedicated and highly motivated software developer with a strong background in computer science and engineering. My journey in software development started with a passion for problem-solving and creating impactful digital solutions. Over the years, I have worked on various projects ranging from mobile applications to complex backend systems. I am proficient in multiple programming languages including Java, JavaScript, Python, and SQL, and have experience with frameworks like Angular, React, and Spring Boot.</p>
+                            <p>My career has taken me through different industries, and I have had the opportunity to work on innovative projects that have improved efficiency and performance in the banking and e-commerce sectors. I pride myself on being a fast learner, team player, and someone who thrives in challenging environments.</p>
+                            <p>In addition to my technical skills, I am passionate about mentoring and helping others grow. I have served as a mentor for aspiring developers and have collaborated with diverse teams to deliver high-quality software solutions. My goal is to continue to grow as a developer and to take on new challenges that allow me to make a difference.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projects Content -->
+<div id="projects" class="content-section" style="display: none;">
+    <div class="projects-content d-flex flex-column align-items-center mt-5 glass-effect">
+        <h2 style="color: white;">Projects</h2>
+        
+        <!-- Project 1: Farm Bazaar -->
+        <div class="project-card mt-4 p-4">
+            <h3>Farm Bazaar</h3>
+            <p>Farm Bazaar is an Android application developed to facilitate the renting and purchasing of farm machinery. The platform provides an easy-to-use interface for farmers to rent out or rent equipment, enhancing accessibility and convenience. The application was developed using Android Studio, with Firebase being utilized for backend operations, including user authentication and real-time database management.</p>
+            <p><strong>Technologies Used:</strong> Android Studio, Firebase</p>
+        </div>
+        
+        <!-- Project 2: Mentoring-Startup -->
+        <div class="project-card mt-4 p-4">
+            <h3>Mentoring-Startup</h3>
+            <p>Mentoring-Startup is a web platform created to facilitate mentor-mentee interactions. The platform allows users to sign up as mentors or mentees and provides an interface for effective communication, progress tracking, and feedback. The front-end was developed using HTML, CSS, and JavaScript, while the backend was built with Python and SQL YOG for database connectivity.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Python, SQL YOG</p>
+        </div>
+        
+        <!-- Project 3: E-Commerce Application for Factory Tour in Europe -->
+        <div class="project-card mt-4 p-4">
+            <h3>E-Commerce Application for Factory Tour in Europe</h3>
+            <p>This project involved the development of an e-commerce application backend for a factory tour in Europe. The backend was built using Java, focusing on optimizing data processing efficiency, which resulted in a 20% improvement. I was also responsible for designing the MySQL database schema and enhancing query performance by 15%. Collaborating with frontend developers, I helped troubleshoot UI issues, leading to a 30% increase in user satisfaction.</p>
+            <p><strong>Technologies Used:</strong> Java, MySQL, JavaScript, Git, Jenkins</p>
+        </div>
+        
+        <!-- Project 4: API Management and Security Enhancement -->
+        <div class="project-card mt-4 p-4">
+            <h3>API Management and Security Enhancement</h3>
+            <p>As part of API management projects, I identified and resolved critical vulnerabilities that reduced potential unauthorized access by 25%. A significant contribution was developing a universal logout API that enhanced overall system security by clearing OAuth tokens from the Gateway cache, thus securing the system against unauthorized access.</p>
+            <p><strong>Technologies Used:</strong> Java, OAuth, API Management</p>
+        </div>
+        
+        <!-- Project 5: Branding Changes -->
+        <div class="project-card mt-4 p-4">
+            <h3>Branding Changes</h3>
+            <p>Led UI changes for a branding overhaul in a banking software product. This involved collaborating with five teams to integrate new UI elements seamlessly without disrupting existing features. The changes were implemented successfully, ensuring compliance with the new branding guidelines while maintaining product stability.</p>
+            <p><strong>Technologies Used:</strong> JavaScript, CSS, HTML</p>
+        </div>
+    </div>
+</div>
+<!-- Skills Content -->
+<div id="skills" class="content-section" style="display: none;">
+    <div class="skills-container d-flex flex-column align-items-center mt-5">
+        <h2>Skills</h2>
+        <div class="row mt-4">
+            <!-- Card 1: Programming Languages -->
+            <div class="col-md-6">
+                <div class="skills-card glass-effect p-4 mb-4">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2: Frameworks & Libraries -->
+            <div class="col-md-6">
+                <div class="skills-card glass-effect p-4 mb-4">
+                    <h4>Frameworks & Libraries</h4>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Node.js</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3: Tools & Technologies -->
+            <div class="col-md-6">
+                <div class="skills-card glass-effect p-4 mb-4">
+                    <h4>Tools & Technologies</h4>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Jenkins</li>
+                        <li>Docker</li>
+                        <li>Postman</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- You can add more cards if needed -->
+        </div>
+    </div>
+</div>
+<!-- Contact Me Content -->
+<div id="contact" class="content-section" style="display: none;">
+    <div class="contact-content d-flex flex-column align-items-center mt-5 glass-effect">
+        <h2>Contact Me</h2>
+        <form class="contact-form mt-4" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Send Message</button>
+        </form>
+    </div>
+</div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript to Show/Hide Content -->
+    <script>
+        function showContent(section) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(function (content) {
+                content.style.display = 'none';
+            });
+            // Show the selected content section
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container d-flex justify-content-center align-items-center">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-profile" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
