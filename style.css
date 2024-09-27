@@ -49,7 +49,7 @@ body {
 }
 
 .content-section {
-    background: rgba(255, 255, 255, 0); /* Make the background transparent */
+    background: rgba(0, 0, 0, 0.5); /* Transparent black background */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ body {
 }
 
 .home-content, .about-content, .projects-content, .skills-container, .contact-content {
-    background: rgba(255, 255, 255, 0); /* Ensure all sections have a fully transparent background */
+    background: rgba(0, 0, 0, 0.5); /* Ensure all sections have a transparent black background */
     border-radius: 15px;
     padding: 160px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
@@ -65,7 +65,7 @@ body {
 
 /* Text content styling */
 .home-text, .about-text, .project-card, .skills-card, .contact-content {
-    color: #ecf0f1; /* Light color for text to contrast with dark background */
+    color: #ffffff; /* White color for text to contrast with black background */
 }
 
 .profile-pic {
@@ -76,8 +76,9 @@ body {
     object-fit: cover; 
 }
 
+/* Footer */
 .footer {
-    background-color: #0a1431; 
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black footer */
     padding: 20px 0px; 
     text-align: center;
     position: relative; 
