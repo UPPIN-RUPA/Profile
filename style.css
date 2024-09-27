@@ -2,22 +2,28 @@
 
 /* Sidebar Styles */
 .sidebar {
-    height: 100vh; /* Full height of the viewport */
-    padding-top: 20px;
-    position: fixed; /* Keeps the sidebar fixed */
+    background-image: url('freepik-export-20240927005834CCfw.jpeg');
+    background-size: cover; /* Ensure the image covers the sidebar */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Center the background image */
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Keep the sidebar fixed */
+    padding-top: 20px;
 }
+
 .sidebar .nav-link {
-    font-size: 18px; /* Adjust font size */
-    margin: 10px 0; /* Add margin for spacing */
+    font-size: 18px;
+    margin: 10px 0;
     color: #ffffff; /* White color for visibility */
     transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
 .sidebar .nav-link:hover,
 .sidebar .nav-link.active {
-    background-color: #495057; /* Slightly lighter shade for hover effect */
-    border-radius: 4px; /* Rounded corners */
+    background-color: rgba(73, 80, 87, 0.7); /* Slightly darker transparent background on hover */
+    border-radius: 4px;
 }
 
 /* Main Content Styles */
@@ -34,226 +40,87 @@
     justify-content: center; /* Center horizontally */
     padding-top: 60px; /* Add padding to push content down */
 }
+body {
+    background-image: url('freepik-export-20240927005948Lg6O.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
-/* Home Content Styles */
-.home-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between text and image */
-    margin-top: 50px;
-    width: 85%; /* Max width for content area */
-    max-width: 1000px; /* Maximum width for the content area */
-    background: rgba(29, 66, 45, 0.8); /* Semi-transparent hunter green */
-    border-radius: 15px; /* Rounded corners */
-    padding: 160px; /* Padding inside the glass effect */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow */
-    margin: 0 auto; /* Center horizontally */
-    position: relative; /* For proper positioning */
+.content-section {
+    background: rgba(255, 255, 255, 0); /* Make the background transparent */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.home-content, .about-content, .projects-content, .skills-container, .contact-content {
+    background: rgba(255, 255, 255, 0); /* Ensure all sections have a fully transparent background */
+    border-radius: 15px;
+    padding: 160px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
 }
 
 /* Text content styling */
-.home-text {
-    max-width: 80%; /* Limit width of the text to 60% */
+.home-text, .about-text, .project-card, .skills-card, .contact-content {
     color: #ecf0f1; /* Light color for text to contrast with dark background */
-    margin-right: 20px; /* Add margin to separate from picture */
 }
 
-/* Profile Picture Styles */
 .profile-pic {
-    border-radius: 5%; /* Circular image */
-    width: 200px; /* Fixed width */
-    height: 200px; /* Fixed height */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    object-fit: cover; /* Ensures image is properly contained */
+    border-radius: 5%; 
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    object-fit: cover; 
 }
 
-/* Footer Styles */
 .footer {
-    background-color: #0a1431; /* Royal blue background */
-    padding: 20px 0px; /* Padding for spacing */
-    text-align: center; /* Center align text */
-    position: relative; /* To position it at the bottom */
-    bottom: 0; /* Stick to the bottom */
-    width: calc(100% - 252px); /* Adjust width to exclude sidebar */
-    margin-top: auto; /* Push footer to the bottom */
+    background-color: #0a1431; 
+    padding: 20px 0px; 
+    text-align: center;
+    position: relative; 
+    bottom: 0; 
+    width: calc(100% - 252px);
+    margin-top: auto;
     margin-left: 252px;
     height: 20%;
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Social Icons Styles */
 .social-icon {
-    color: white; /* Icon color */
-    margin: 0 15px; /*Space between icons*/
-    font-size: 40px; /* Icon size */
-    /* margin-left: 280px; */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: white;
+    margin: 0 15px; 
+    font-size: 40px;
+    transition: color 0.3s ease; 
     display: flex;
     align-items: right;
 }
 
 .social-icon:hover {
-    color: #f0f0f0; /* Lighter color on hover */
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between text and image */
-    margin-top: 5px;
-    width: 100%; /* Max width for content area */
-    background: rgba(29, 66, 45, 0.8); /* Semi-transparent hunter green */
-    border-radius: 15px; /* Rounded corners */
-    padding: 119px; /* Padding inside the glass effect */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow */
-    margin: 0 auto; /* Center horizontally */
-    position: relative; /* For proper positioning */
-}
-
-/* Text content styling */
-.about-text {
-    max-width: 100%; /* Limit width of the text to 60% */
-    color: #ecf0f1; /* Light color for text to contrast with dark background */
-    margin-right: 20px; /* Add margin to separate from picture */
-}
-.projects-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between text and image */
-    margin-top: 5px;
-    width: 100%; /* Max width for content area */
-    background: rgba(29, 66, 45, 0.8); /* Semi-transparent hunter green */
-    border-radius: 15px; /* Rounded corners */
-    padding: 119px; /* Padding inside the glass effect */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow */
-    margin: 0 auto; /* Center horizontally */
-    position: relative; /* For proper positioning */
-}
-
-.project-card{
-    color :#ecf0f1;
-}
-/* Common Styles for Skills Cards */
-.skills-container {
-    width: 80%; /* Container width */
-    max-width: 1000px; /* Maximum width for container */
-    margin: 0 auto; /* Center container */
-    text-align: center; /* Center-align heading */
-    color: #ecf0f1; /* Light color for heading text */
-}
-
-.skills-card {
-    background: rgba(29, 66, 45, 0.8); /* Semi-transparent hunter green */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Padding inside the card */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow */
-    color: #ecf0f1; /* Light color for text */
-}
-
-/* Skill Titles */
-.skills-card h4 {
-    margin-bottom: 15px; /* Margin below section titles */
-    color: #ecf0f1; /* Light color for section titles */
-}
-
-/* Skills List */
-.skills-card ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-}
-
-.skills-card li {
-    margin-bottom: 8px; /* Space between list items */
-    color: #ecf0f1; /* Light color for list items */
-}
-/* Contact Me Content Styles */
-.contact-content {
-    background: rgba(29, 66, 45, 0.8); /* Semi-transparent hunter green */
-    border-radius: 15px; /* Rounded corners */
-    padding: 30px; /* Padding inside the glass effect */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow */
-    width: 80%; /* Width for content */
-    max-width: 800px; /* Maximum width for content */
-    margin: 0 auto; /* Center horizontally */
-    color: #ecf0f1; /* Light color for text */
-    text-align: center; /* Center-align text */
-}
-
-/* Form Styles */
-.contact-form .form-control {
-    background: rgba(255, 255, 255, 0.1); /* Slightly transparent input background */
-    color: #ecf0f1; /* Light color for text */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners for inputs */
-    padding: 10px 15px; /* Padding for inputs */
-    margin-bottom: 15px; /* Margin between form elements */
-}
-
-.contact-form .form-control::placeholder {
-    color: #b0bec5; /* Placeholder text color */
-}
-
-.contact-form .form-control:focus {
-    background: rgba(255, 255, 255, 0.2); /* Change background on focus */
-    color: #ffffff; /* Change text color on focus */
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle glow on focus */
-    outline: none; /* Remove default outline */
-}
-
-.contact-form button {
-    background-color: #1a252f; /* Button background color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Padding for button */
-    color: #ecf0f1; /* Button text color */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Cursor pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
-}
-
-.contact-form button:hover {
-    background-color: #4169e1; /* Change button color on hover */
+    color: #f0f0f0; 
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .contact-content {
-        width: 100%; /* Full width on smaller screens */
-        padding: 20px; /* Adjust padding */
-    }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .skills-container {
-        width: 100%; /* Full width on smaller screens */
-        padding: 0 15px; /* Padding on smaller screens */
-    }
-
-    .skills-card {
-        margin-bottom: 20px; /* Add margin below each card on smaller screens */
-    }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center-align content */
-        text-align: center; /* Center text for better readability */
-        height: auto; /* Let content height adjust naturally */
-    }
-
-    .home-text,
-    .profile-container {
-        width: 100%; /* Make both text and image full width */
-        margin: 20px 0; /* Add margin for spacing */
-        height: auto; /* Let the height adjust automatically */
+    .home-content, .about-content, .projects-content, .skills-container, .contact-content {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        height: auto; 
+        padding: 20px;
     }
 
     .profile-pic {
-        width: 150px; /* Smaller image size */
-        height: 150px; /* Smaller image size */
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .skills-container, .contact-content {
+        width: 100%; 
+        padding: 20px; 
     }
 }
