@@ -12,28 +12,35 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav class="col-md-2 d-none d-md-block bg-dark sidebar position-fixed">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#home"><i class="fas fa-home"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#about"><i class="fas fa-user"></i> About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#projects"><i class="fas fa-briefcase"></i> Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#skills"><i class="fas fa-cogs"></i> Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contact"><i class="fas fa-envelope"></i> Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
+            <div class="sidebar">
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">
+                            <img src="home-agreement.png" alt="Home Icon" class="icon-image"> <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">
+                            <img src="profile-user.png" alt="About Me Icon" class="icon-image"> <span>About Me</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">
+                            <img src="system-administration.png" alt="Projects Icon" class="icon-image"> <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">
+                            <img src="self-development.png" alt="Skills Icon" class="icon-image"> <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">
+                            <img src="contact-us.png" alt="Contact Me Icon" class="icon-image"> <span>Contact Me</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!-- Main Content -->
             <main class="col-md-10 ml-sm-auto px-4 offset-md-2">
                 <!-- Home Content -->
@@ -43,7 +50,7 @@
                             <h1>Rupa Uppin</h1>
                             <p>Hello! I'm Rupa Uppin, a passionate software developer based in Cincinnati, Ohio, with experience in both frontend and backend development. I have worked on diverse projects across different domains, from e-commerce applications to security enhancements for banking industry products. With proficiency in Java, JavaScript, MySQL, and various frameworks like Angular and React, I bring a versatile skill set to the table.</p>
                         </div>
-                        <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+                        <img src="pic_prof1.jpeg" alt="Profile Picture" class="profile-pic">
                     </div>
                 </div>
 
@@ -93,36 +100,52 @@
             <p><strong>Technologies Used:</strong> React, Node.js, MySQL</p>
         </div>
 
-        <!-- Project 5: Implementing Storage Manager -->
-        <div class="project-card mt-4 p-4">
-            <h3>Implementing Storage Manager</h3>
-            <p>Implemented a storage manager capable of manipulating files (creating, opening, closing), reading blocks from disk into memory, and writing blocks back to disk. This project emphasized file handling, memory management, and efficient block management.</p>
-            <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
-            <p><a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign1?ref_type=heads" target="_blank">Access Code</a></p>
+         <!-- Implementing Storage Manager -->
+         <div class="project-card mt-4 p-4 d-flex">
+            <div class="project-description">
+                <h3>Implementing Storage Manager</h3>
+                <p>Implemented a storage manager capable of manipulating files (creating, opening, closing), reading blocks from disk into memory, and writing blocks back to disk. This project emphasized file handling, memory management, and efficient block management.</p>
+                <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
+            </div>
+            <a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign1?ref_type=heads" target="_blank">
+                <img src="storage_manager.jpg" alt="Implementing Storage Manager" class="project-image">
+            </a>
         </div>
 
-        <!-- Project 6: Buffer Manager -->
-        <div class="project-card mt-4 p-4">
-            <h3>Buffer Manager</h3>
-            <p>Developed a buffer manager that handles page replacement strategies (FIFO, LRU, LFU, CLOCK), managing a fixed number of pages in memory, and ensuring thread safety and efficient page retrieval.</p>
-            <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
-            <p><a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign2?ref_type=heads" target="_blank">Access Code</a></p>
+        <!-- Buffer Manager -->
+        <div class="project-card mt-4 p-4 d-flex">
+            <div class="project-description">
+                <h3>Buffer Manager</h3>
+                <p>Developed a buffer manager that handles page replacement strategies (FIFO, LRU, LFU, CLOCK), managing a fixed number of pages in memory, and ensuring thread safety and efficient page retrieval.</p>
+                <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
+            </div>
+            <a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign2?ref_type=heads" target="_blank">
+                <img src="pic2.jpeg" alt="Buffer Manager" class="project-image">
+            </a>
         </div>
 
-        <!-- Project 7: Record Manager -->
-        <div class="project-card mt-4 p-4">
-            <h3>Record Manager</h3>
-            <p>Built a record manager to handle tables with a fixed schema, allowing for record insertion, deletion, updating, and scanning based on search conditions. Implemented efficient data retrieval and manipulation techniques.</p>
-            <p><strong>Technologies Used:</strong> C, C++, Linux, GDB, LLDB</p>
-            <p><a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign3?ref_type=heads" target="_blank">Access Code</a></p>
+        <!-- Record Manager -->
+        <div class="project-card mt-4 p-4 d-flex">
+            <div class="project-description">
+                <h3>Record Manager</h3>
+                <p>Built a record manager to handle tables with a fixed schema, allowing for record insertion, deletion, updating, and scanning based on search conditions. Implemented efficient data retrieval and manipulation techniques.</p>
+                <p><strong>Technologies Used:</strong> C, C++, Linux, GDB, LLDB</p>
+            </div>
+            <a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign3?ref_type=heads" target="_blank">
+                <img src="record_manager.jpeg" alt="Record Manager" class="project-image">
+            </a>
         </div>
 
-        <!-- Project 8: B+ Tree Index Implementation -->
-        <div class="project-card mt-4 p-4">
-            <h3>B+ Tree Index Implementation</h3>
-            <p>Implemented a B+ tree index for database indexing, including functionalities like leaf and non-leaf node splits, key insertion, deletion, and tree scanning in sorted order. This project demonstrated advanced data structure implementation and optimization techniques.</p>
-            <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
-            <p><a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign4?ref_type=heads" target="_blank">Access Code</a></p>
+        <!-- B+ Tree Index Implementation -->
+        <div class="project-card mt-4 p-4 d-flex">
+            <div class="project-description">
+                <h3>B+ Tree Index Implementation</h3>
+                <p>Implemented a B+ tree index for database indexing, including functionalities like leaf and non-leaf node splits, key insertion, deletion, and tree scanning in sorted order. This project demonstrated advanced data structure implementation and optimization techniques.</p>
+                <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
+            </div>
+            <a href="https://gitlab.com/adm-ss24/group1/-/tree/main/assign4?ref_type=heads" target="_blank">
+                <img src="b-graph.jpg" alt="B+ Tree Index Implementation" class="project-image">
+            </a>
         </div>
     </div>
 </div>

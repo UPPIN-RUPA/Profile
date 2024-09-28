@@ -1,29 +1,81 @@
 /* styles.css */
 
-/* Sidebar Styles */
+/* Sidebar styles */
 .sidebar {
-    background-image: url('freepik-export-20240927005834CCfw.jpeg');
-    background-size: cover; /* Ensure the image covers the sidebar */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Center the background image */
-    background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    height: 100vh; /* Full height of the viewport */
-    position: fixed; /* Keep the sidebar fixed */
-    padding-top: 20px;
+    width: 60px; /* Initial collapsed width showing only icons */
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 218, 185, 0.5); /* Transparent peach background */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition for expanding */
+    overflow: hidden; /* Hide content that overflows when collapsed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Sidebar expands on hover */
+.sidebar:hover {
+    width: 180px; /* Full width on hover */
+}
+
+/* Sidebar links */
 .sidebar .nav-link {
     font-size: 18px;
-    margin: 10px 0;
     color: #ffffff; /* White color for visibility */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+    padding: 15px;
+    width: 100%; /* Ensure the nav link spans the full width of the sidebar */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align icons and text to the start */
+    transition: padding-left 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-.sidebar .nav-link:hover,
-.sidebar .nav-link.active {
-    background-color: rgba(73, 80, 87, 0.7); /* Slightly darker transparent background on hover */
-    border-radius: 4px;
+/* Icon image styling */
+.sidebar .icon-image {
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+    margin-right: -75px; /* Space between icon and text */
+    display: block; /* Ensure the image is displayed */
+    transition: margin-right 0.3s ease; /* Smooth transition for margin */
+}
+
+/* Hide text content initially (when not hovered) */
+.sidebar .nav-link span {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.sidebar:hover .icon-image {
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+    margin-right: 20px; /* Space between icon and text */
+    display: block; /* Ensure the image is displayed */
+}
+/* Show text content on hover */
+.sidebar:hover .nav-link span {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Adjust padding on hover */
+.sidebar:hover .nav-link {
+    margin-right: 20px;
+}
+
+/* Adjust the content area to account for the sidebar */
+.main-content {
+    margin-left: 60px; /* Matches the collapsed width of the sidebar */
+    transition: margin-left 0.3s ease; /* Smooth transition for expanding */
+}
+
+/* On sidebar hover, expand the content area */
+.sidebar:hover ~ .main-content {
+    margin-left: 180px; /* Matches the expanded width of the sidebar */
 }
 
 /* Main Content Styles */
@@ -71,7 +123,7 @@ body {
 .profile-pic {
     border-radius: 5%; 
     width: 200px;
-    height: 200px;
+    height: 280px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     object-fit: cover; 
 }
@@ -104,6 +156,32 @@ body {
 .social-icon:hover {
     color: #f0f0f0; 
 }
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    flex: 1;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.project-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
