@@ -36,9 +36,9 @@ Showcases the projects I have worked on, including:
 - **Mentoring Startups**: A web platform for mentor-mentee interactions.
 - **Mentoring Students**: A mentoring platform using Angular and Spring Boot.
 - **Inventory Management**: A system for tracking and managing product stocks using React and Node.js.
-- **Implementing Storage Manager**: A C/C++ project focused on file handling and memory management.
-- **Buffer Manager**: Implementation of page replacement strategies in C/C++.
-- **Record Manager**: A project for managing database records using C/C++.
+- **Implementing Storage Manager**: A C project focused on file handling and memory management.
+- **Buffer Manager**: Implementation of page replacement strategies in C.
+- **Record Manager**: A project for managing database records using C.
 - **B+ Tree Index Implementation**: A project demonstrating advanced data structure implementation.
 
 ### Skills
