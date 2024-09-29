@@ -81,7 +81,7 @@
 /* Main Content Styles */
 .main-content {
     margin-left: 15%; /* Offset by sidebar width */
-    padding: 40px;
+    padding: 10px;
     background-image: url('greenGlass.webp'); /* Background image covering entire main content */
     background-size: cover; /* Cover the entire area */
     background-repeat: repeat-x; /* Prevent repetition */
@@ -90,7 +90,8 @@
     display: flex; /* Center content */
     align-items: flex-start; /* Align items to start */
     justify-content: center; /* Center horizontally */
-    padding-top: 60px; /* Add padding to push content down */
+    padding-top: 2px; /* Add padding to push content down */
+    padding-bottom: 10px;
 }
 body {
     background-image: url('freepik-export-20240927005948Lg6O.jpeg');
@@ -111,8 +112,9 @@ body {
 .home-content, .about-content, .projects-content, .skills-container, .contact-content {
     background: rgba(0, 0, 0, 0.5); /* Ensure all sections have a transparent black background */
     border-radius: 15px;
-    padding: 160px;
+    padding: 130px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
+    color: #ffffff;
 }
 
 /* Text content styling */
@@ -184,6 +186,18 @@ body {
 
 
 /* Responsive Adjustments */
+@media (min-width: 576px) {
+    .col-md-10.ml-sm-auto.px-4.offset-md-2 {
+        margin-left: 156px !important; /* Set the desired margin-left */
+    }
+
+    /* On sidebar hover, reset margin-left */
+    .sidebar:hover ~ .col-md-10.ml-sm-auto.px-4.offset-md-2 {
+        margin-left: auto !important; /* Reset to auto on hover */
+    }
+}
+
+
 @media (max-width: 768px) {
     .home-content, .about-content, .projects-content, .skills-container, .contact-content {
         flex-direction: column; 
